@@ -27,12 +27,15 @@ public class GridLayoutSample {
         JFrame frame=new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setSize(500, 500);
-        GridLayout layout=new GridLayout(3, 2);
+        GridLayout layout=new GridLayout(100,5 );
         frame.setLayout(layout);
         
         //1. add 6 CustomComponent to the frame
         //2. resize the frame to see the effect
-        
+        for(int i =0; i<25;i++){
+            CustomComponent c= new CustomComponent();
+            frame.add(c);
+        }
         //////////////////////////////////////////////////////////////////////
         
         frame.setVisible(true);
